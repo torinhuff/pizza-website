@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Torin's Pizzas</title>
+  </head>
+  <body>
+    <h1>Torin's Pizzas</h1>
+    <h2>Customize Your Pizza!</h2>
+    <p>Please select a size:</p>
+    <form id="pizza-size">
+      <div class="radio">
+        <label><input type="radio" name="size" value="personal">Personal (8")</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="size" value="small">Small (10")</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="size" value="medium">Medium (12")</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="size" value="large">Large (14")</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="size" value="family">Family (12")</label>
+      </div>
+      <br>
+      <p>Choose your toppings:</p>
+      <div class="checkbox">
+        <label><input type="checkbox" name="toppings" value="jalapenos">Jalapenos</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="toppings" value="pineapple">Pineapple</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="toppings" value="bacon">Bacon</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="toppings" value="pepperoni">Pepperoni</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="toppings" value="sausage">Sausage</label>
+      </div>
+      <button type="button" onclick="makePizza()" name="submit">Submit</button>
+    </form>
+
+
+  </body>
+</html>
