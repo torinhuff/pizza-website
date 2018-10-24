@@ -13,19 +13,19 @@
     <p>Please select a size:</p>
     <form id="pizza-size">
       <div class="radio">
-        <label><input type="radio" name="size" value="personal">Personal (8")</label>
+        <label><input type="radio" name="size" value="Personal Pizza">Personal (8")</label>
       </div>
       <div class="radio">
-        <label><input type="radio" name="size" value="small">Small (10")</label>
+        <label><input type="radio" name="size" value="Small Pizza">Small (10")</label>
       </div>
       <div class="radio">
-        <label><input type="radio" name="size" value="medium">Medium (12")</label>
+        <label><input type="radio" name="size" value="Medium Pizza">Medium (12")</label>
       </div>
       <div class="radio">
-        <label><input type="radio" name="size" value="large">Large (14")</label>
+        <!-- <label><input type="radio" name="size" value="Large Pizza">Large (14")</label> -->
       </div>
       <div class="radio">
-        <label><input type="radio" name="size" value="family">Family (12")</label>
+        <label><input type="radio" name="size" value="Family Pizza">Family (12")</label>
       </div>
       <br>
       <p>Choose your toppings:</p>
@@ -45,7 +45,15 @@
         <label><input type="checkbox" name="toppings" value="sausage">Sausage</label>
       </div>
       <button type="button" onclick="makePizza()" name="submit">Submit</button>
+      <button type="button" onclick="makeOrder()" name="submit">Order</button>
     </form>
+    <div class="running-total">
+      <p id="user-total"></p>
+    </div>
+    <div class="price-display">
+      <p id="final-price">
+    </p>
+    </div>
 
 
   </body>
