@@ -11,151 +11,156 @@
     <div class="container" id="header-content">
       <div class="row">
         <div id="header-left">
-            <div class ="col-sm-8">
-              <h1 id="title">Torin'Pizza Parlor</h1>
-              <p id="established"><em>Since 1993</em></p>
-              <h3 id="slogan"><em>Only One Pizza Per Customer, but it's Pretty Decent!</em></h3>
+          <div class ="col-sm-8">
+            <h1 id="title">Torin's Pizza Parlor</h1>
+            <p id="established"><em>Since 1993</em></p>
+            <h3 id="slogan"><em>Only One Pizza Per Customer, But It's Pretty Decent!</em></h3>
+          </div>
+          <div class="col-sm-3" id="top-right">
+            <div class="header-info">
+              <h6>Contact Info:</h6>
+              <p>400 SW 6th Ave #800</p>
+              <p>Portland, OR 97204</p>
+              <p>(503)880-1900</p>
+              <h6>Business Hours:</h6>
+                  <p>Mon-Fri: 12PM - 11PM</p>
+                  <p>Sat: 11AM - 1AM</p>
+                  <p>Sun: 2PM - 10PM</p>
+              <img src="http://cliparts.co/cliparts/yTk/Kjj/yTkKjjb9c.png" alt="Cartoon pizza guy">
             </div>
-            <div class="col-sm-3" id="top-right">
-              <div class="header-info">
-                <h6>Contact Info:</h6>
-                <p>400 SW 6th Ave #800</p>
-                <br>
-                <br>Portland, OR 97204</p>
-                <p><i  class="fa fa-phone-square"></i> (503)880-1900</p>
-                <h6>Business Hours:</h6>
-                    <p>Mon-Fri: 12PM - 11PM</p>
-                    <p>Sat: 11AM - 1AM</p>
-                    <p>Sun: 2PM - 10PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 id="customize">Customize Your Pizza!</h2>
+    <div class="container">
+      <div class="row" id="pizza-info">
+        <div class="col-md-6">
+          <div id="pizza-sizes">
+            <h4>Please select a size:</h4>
+            <form id="pizza-size">
+              <div class="radio">
+                <label><input type="radio" name="size" value="Personal Pizza">Personal (8") - $7</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="size" value="Small Pizza">Small (10") - $9</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="size" value="Medium Pizza">Medium (12") - $11</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="size" value="Large Pizza">Large (14") - $13</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="size" value="Family Pizza">Family (12") - $15</label>
+              </div>
+            </div>
+            <button id="just-checking" type="button" onclick="checkOrder()" name="check-total">Check Total</button>
+            <div class="running-total">
+              <h5 id="user-total"></h5>
+            </div>
+            <br>
+            <button id="finish-button" type="button" onclick="makePizza()" name="place-order">Place Order</button>
+            <div class="price-display">
+              <h5 id="final-price">
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-6" id="toppings">
+              <h4>Choose your toppings ($1 each):</h4>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="pepperoni">Pepperoni</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="salami">Salami</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="sausage">Sausage</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="jalapenos">Jalapenos</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="peppers">Peppers</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="pineapple">Pineapple</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="chicken">Chicken</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="bacon">Bacon</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="tomatoes">Tomatoes</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="onions">Red Onions</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="olives">Olives</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="sausage">Sausage</label>
               </div>
             </div>
           </div>
         </div>
+      </form>
+      <div class="total-top">
+        <h5 id="final-total"></h5>
       </div>
-    <div class="row pizza-info">
-      <div class="col-sm-3">
-        <p>Please select a size:</p>
-        <form id="pizza-size">
-          <div class="radio">
-            <label><input type="radio" name="size" value="Personal Pizza">Personal (8") - $7</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="size" value="Small Pizza">Small (10") - $9</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="size" value="Medium Pizza">Medium (12") - $11</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="size" value="Large Pizza">Large (14") - $13</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="size" value="Family Pizza">Family (12") - $15</label>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <p>Choose your toppings ($1 each):</p>
-          <div class="checkbox">
-            <label><input type="checkbox" name="toppings" value="pepperoni">Pepperoni</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="toppings" value="salami">Salami</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="toppings" value="sausage">Sausage</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="toppings" value="jalapenos">Jalapenos</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="toppings" value="peppers">Peppers</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="toppings" value="pineapple">Pineapple</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="toppings" value="chicken">Chicken</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="toppings" value="bacon">Bacon</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="toppings" value="tomatoes">Tomatoes</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="toppings" value="onions">Red Onions</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="toppings" value="olives">Olives</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="toppings" value="sausage">Sausage</label>
-          </div>
-        </div>
-          <div class="col-sm-3">
-            <button type="button" onclick="makePizza()" name="place-order">Place Order</button>
-            <button type="button" onclick="checkOrder()" name="check-total">Check Total</button>
-          </form>
-          <div class="running-total">
-            <p id="user-total"></p>
-          </div>
-          <div class="price-display">
-            <p id="final-price">
-          </p>
-        </div>
+      <div class="order-method">
+        <h3>How would you like to receive your order?</h3>
+        <button class="delivery-or-pick" type="button" name="delivery" onclick="deliverOrder()">Delivery</button>
+        <button class="delivery-or-pick" type="button" name="pick-up"
+        onclick="pickUp()">Pick Up</button>
       </div>
-    </div>
-    <div class="order-method">
-      <h3>How would you like to receive your order?</h3>
-      <button type="button" name="devlivery" onclick="deliverOrder()">Delivery</button>
-      <button type="button" name="pick-up"
-      onclick="pickUp()">Pick Up</button>
-    </div>
-    <div class="delivery-info">
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Please enter your delivery information:</h2>
-          <form id="new-delivery">
-            <div class="form-group">
-              <label for="new-first-name">First name</label>
-              <input type="text" class="form-control" id="new-first-name">
-            </div>
-            <div class="form-group">
-              <label for="new-last-name">Last name</label>
-              <input type="text" class="form-control" id="new-last-name">
-            </div>
-            <div class="form-group">
-              <label for="new-street">Street</label>
-              <input type="text" class="form-control" id="new-street">
-            </div>
-            <div class="form-group">
-              <label for="new-city">City</label>
-              <input type="text" class="form-control" id="new-city">
-            </div>
-            <div class="form-group">
-              <label for="new-state">State</label>
-              <input type="text" class="form-control" id="new-state">
-            </div>
-            <button type="submit" class="button">Submit</button>
-          </form>
-        </div>
+      <div class="delivery-info">
+        <h2>Please enter your delivery information:</h2>
+        <form id="new-delivery">
+          <div class="form-group">
+            <label for="new-first-name">First name</label>
+            <input type="text" class="form-control" id="new-first-name">
+          </div>
+          <div class="form-group">
+            <label for="new-last-name">Last name</label>
+            <input type="text" class="form-control" id="new-last-name">
+          </div>
+          <div class="form-group">
+            <label for="new-street">Street</label>
+            <input type="text" class="form-control" id="new-street">
+          </div>
+          <div class="form-group">
+            <label for="new-city">City</label>
+            <input type="text" class="form-control" id="new-city">
+          </div>
+          <div class="form-group">
+            <label for="new-state">State</label>
+            <input type="text" class="form-control" id="new-state">
+          </div>
+          <button id="delivery-submit" type="submit" class="button">Submit</button>
+        </form>
       </div>
-    </div>
-    <div class="pick-up-message">
-      <h4>Great! Your order will be ready in 30 minutes. See you then!</h4>
-    </div>
-    <div class="confirm-delivery">
-      <h2>Please Confirm Your Address:</h2>
-        <p>First name: <span class="first-name"></span></p>
-        <p>Last name: <span class="last-name"></span></p>
-        <p>Street: <span class="street"></span></p>
-        <p>City: <span class="city"></span></p>
-        <p>State: <span class="state"></span></p>
-        <button type="button" name="pick-up"
-        onclick="confirmFinish()">Confirm Order</button>
-    </div>
-    <div class="final-message">
-      <h3 id="thank-you">Thank you for your order! Our driver will be there within the next 45 minutes!</h3>
-      <button type="button" name="go-back" onclick="window.location.reload()">Go back to the Home Page</button>
-    </div>
+      <div class="pick-up-message">
+        <h4>Great! Your order will be ready in 30 minutes. See you then!</h4>
+        <button type="button" name="go-back" onclick="window.location.reload()">Go back to the Home Page</button>
+      </div>
+      <div class="confirm-delivery">
+        <h2>Please Confirm Your Address:</h2>
+          <p>Your total: <span class="final-total"></span></p>
+          <p>Name: <span class="full-name"></span></p>
+          <p>Street: <span class="street"></span></p>
+          <p>City: <span class="city"></span></p>
+          <p>State: <span class="state"></span></p>
+          <button id="final-confirmation" type="button" name="confirm-final"
+          onclick="confirmFinish()">Confirm Order</button>
+      </div>
+      <div class="final-message">
+        <h3 id="thank-you">Thank you for your order! Our driver will be there within the next 45 minutes!</h3>
+        <button type="button" name="go-back" onclick="window.location.reload()">Go back to the Home Page</button>
+      </div>
+
   </body>
 </html>

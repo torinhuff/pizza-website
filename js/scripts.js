@@ -48,22 +48,34 @@ function updatePizza(){
 
 function makePizza(){
   updatePizza();
-  $("p#final-price").text("$" + globalPizza.finalPrice());
+  $("h5#final-price").show();
+  $("h5#final-price").text("Your final total is" + " " + "$" + globalPizza.finalPrice());
+  $("h5#user-total").hide();
+
 }
 
 function checkOrder() {
   updatePizza();
-  $("p#user-total").text("$" + globalPizza.finalPrice());
+  $("h5#user-total").show();
+  $("h5#user-total").text("Your total so far is" + " " + "$" + globalPizza.finalPrice());
+  $("h5#final-price").hide();
 };
 
 function deliverOrder() {
+  $(".total-top").show();
+  $("h5#final-total").text("Your final total is" + " " + "$" + globalPizza.finalPrice());
   $(".delivery-info").show();
+  $("#pizza-info").hide();
   $(".pick-up-message").hide();
 }
 
 function pickUp() {
+  $(".total-top").show();
+  $("h5#final-total").text("Your final total is" + " " + "$" + globalPizza.finalPrice());
   $(".pick-up-message").show();
+  $("#pizza-info").hide();
   $(".delivery-info").hide();
+  $(".order-method").hide();
 }
 
 function confirmFinish() {
@@ -107,8 +119,8 @@ $(document).ready(function() {
 
     $(".delivery-info").hide();
     $(".confirm-delivery").show();
-    $(".first-name").text(newContact.firstName);
-    $(".last-name").text(newContact.lastName);
+    $(".final-total").text(" " + "$" + globalPizza.finalPrice());
+    $(".full-name").text(newContact.fullName);
     $(".street").text(newContact.street);
     $(".city").text(newContact.city);
     $(".state").text(newContact.state);
