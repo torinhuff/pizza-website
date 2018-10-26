@@ -66,6 +66,20 @@ function pickUp() {
   $(".delivery-info").hide();
 }
 
+function confirmFinish() {
+  $(".final-message").show();
+  $("h2#customize").hide();
+  $(".confirm-delivery").hide();
+  $(".pizza-info").hide();
+  $(".order-method").hide();
+}
+
+// function confirmAddress() {
+//   $(".confirm-delivery").show();
+//   $(".delivery-info").hide();
+//   $(".pick-up-message").hide();
+// }
+
 function Contact(first, last, street, city, state) {
   this.firstName = first;
   this.lastName = last;
@@ -82,9 +96,8 @@ Contact.prototype.fullName = function() {
 //user-logic
 
 $(document).ready(function() {
-  $("form#new-contact").submit(function(event) {
+  $("form#new-delivery").submit(function(event) {
     event.preventDefault();
-
     var inputtedFirstName = $("input#new-first-name").val();
     var inputtedLastName = $("input#new-last-name").val();
     var inputtedStreet = $("input#new-street").val();
@@ -93,17 +106,17 @@ $(document).ready(function() {
 
     var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedStreet, inputtedCity, inputtedState);
 
-    $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
+    $(".delivery-info").hide();
+    $(".confirm-delivery").show();
+    $(".first-name").text(newContact.firstName);
+    $(".last-name").text(newContact.lastName);
+    $(".street").text(newContact.street);
+    $(".city").text(newContact.city);
+    $(".state").text(newContact.state);
+    // };
 
-    $(".contact").last().click(function() {
-      $("#show-contact").show();
-      $("#show-contact h2").text(newContact.firstName);
-      $(".first-name").text(newContact.firstName);
-      $(".last-name").text(newContact.lastName);
-      $(".street").text(newContact.street);
-      $(".city").text(newContact.city);
-      $(".state").text(newContact.state);
-    });
-
+    // $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
   });
+
 });
+//

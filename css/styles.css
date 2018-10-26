@@ -5,3 +5,15 @@
 .pick-up-message {
   display: none;
 }
+
+.confirm-delivery {
+  display: none;
+}
+
+.final-message {
+  display: none;
+}
+
+.top-info {
+  display: block;
+}

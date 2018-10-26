@@ -8,9 +8,11 @@
     <title>Torin's Pizza Parlor</title>
   </head>
   <body>
-    <h1>Torin's Pizza Parlor</h1>
-    <h2>Customize Your Pizza!</h2>
-    <div class="row">
+    <div class="top-info">
+      <h1 id="title">Torin's Pizza Parlor</h1>
+      <h2 id="customize">Customize Your Pizza!</h2>
+    </div>
+    <div class="row pizza-info">
       <div class="col-sm-3">
         <p>Please select a size:</p>
         <form id="pizza-size">
@@ -92,7 +94,7 @@
       <div class="row">
         <div class="col-md-6">
           <h2>Please enter your delivery information:</h2>
-          <form id="new-contact">
+          <form id="new-delivery">
             <div class="form-group">
               <label for="new-first-name">First name</label>
               <input type="text" class="form-control" id="new-first-name">
@@ -121,24 +123,18 @@
     <div class="pick-up-message">
       <h4>Great! Your order will be ready in 30 minutes. See you then!</h4>
     </div>
-
-          <h2>Contacts:</h2>
-          <ul id="contacts">
-
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <div id="show-contact">
-            <h2></h2>
-
-            <p>First name: <span class="first-name"></span></p>
-            <p>Last name: <span class="last-name"></span></p>
-            <p>Street: <span class="street"></span></p>
-            <p>City: <span class="city"></span></p>
-            <p>State: <span class="state"></span></p>
-          </div>
-        </div>
-      </div>
-
+    <div class="confirm-delivery">
+      <h2>Please Confirm Your Address:</h2>
+        <p>First name: <span class="first-name"></span></p>
+        <p>Last name: <span class="last-name"></span></p>
+        <p>Street: <span class="street"></span></p>
+        <p>City: <span class="city"></span></p>
+        <p>State: <span class="state"></span></p>
+        <button type="button" name="pick-up"
+        onclick="confirmFinish()">Confirm Order</button>
+    </div>
+    <div class="final-message">
+      <h3 id="thank-you">Thank you for Your order! Our driver will be there within the next 45 minutes!</h3>
+    </div>
   </body>
 </html>
