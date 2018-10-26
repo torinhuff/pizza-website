@@ -68,7 +68,6 @@ function pickUp() {
 
 function confirmFinish() {
   $(".final-message").show();
-  $("h2#customize").hide();
   $(".confirm-delivery").hide();
   $(".pizza-info").hide();
   $(".order-method").hide();

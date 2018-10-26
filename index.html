@@ -8,10 +8,30 @@
     <title>Torin's Pizza Parlor</title>
   </head>
   <body>
-    <div class="top-info">
-      <h1 id="title">Torin's Pizza Parlor</h1>
-      <h2 id="customize">Customize Your Pizza!</h2>
-    </div>
+    <div class="container" id="header-content">
+      <div class="row">
+        <div id="header-left">
+            <div class ="col-sm-8">
+              <h1 id="title">Torin'Pizza Parlor</h1>
+              <p id="established"><em>Since 1993</em></p>
+              <h3 id="slogan"><em>Only One Pizza Per Customer, but it's Pretty Decent!</em></h3>
+            </div>
+            <div class="col-sm-3" id="top-right">
+              <div class="header-info">
+                <h6>Contact Info:</h6>
+                <p>400 SW 6th Ave #800</p>
+                <br>
+                <br>Portland, OR 97204</p>
+                <p><i  class="fa fa-phone-square"></i> (503)880-1900</p>
+                <h6>Business Hours:</h6>
+                    <p>Mon-Fri: 12PM - 11PM</p>
+                    <p>Sat: 11AM - 1AM</p>
+                    <p>Sun: 2PM - 10PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <div class="row pizza-info">
       <div class="col-sm-3">
         <p>Please select a size:</p>
@@ -134,7 +154,8 @@
         onclick="confirmFinish()">Confirm Order</button>
     </div>
     <div class="final-message">
-      <h3 id="thank-you">Thank you for Your order! Our driver will be there within the next 45 minutes!</h3>
+      <h3 id="thank-you">Thank you for your order! Our driver will be there within the next 45 minutes!</h3>
+      <button type="button" name="go-back" onclick="window.location.reload()">Go back to the Home Page</button>
     </div>
   </body>
 </html>
