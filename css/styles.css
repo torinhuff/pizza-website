@@ -1,3 +1,7 @@
-/* #final-price {
+.delivery-info {
   display: none;
-} */
+}
+
+.pick-up-message {
+  display: none;
+}
