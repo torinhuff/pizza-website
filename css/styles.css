@@ -1,14 +1,6 @@
-.pick-up-message {
-  display: none;
-}
-
-.final-message {
-  display: none;
-}
-
 #header-content {
   background-image: url(https://www.gannett-cdn.com/-mm-/3b8b0abcb585d9841e5193c3d072eed1e5ce62bc/c=0-30-580-356/local/-/media/2018/06/17/USATODAY/usatsports/pizza-gettyimages-621463552_large.jpg?width=3200&height=1680&fit=crop);
-  background-size: 80%;
+  background-size: 100%;
   background-repeat: none;
   opacity: 0.95;
   width: 100%;
@@ -17,9 +9,10 @@
 }
 
 #title {
-  text-shadow: 3px 3px #3d8eba;
+  text-shadow: 3px 3px #a54242;
   text-align: center;
   font-size: 96px;
+  font-family: 'Sigmar One', cursive;
   color: white;
   padding-left: 16px;
   margin-top:0px;
@@ -28,7 +21,8 @@
 
 #established {
   text-shadow: none;
-  font-size: 28px;
+  font-size: 32px;
+  font-family: 'Bangers', cursive;
   color: white;
   text-align: center;
 }
@@ -37,8 +31,9 @@
   margin-top:-8px;
   text-shadow: none;
   font-size: 40px;
+  font-family: 'Lobster', cursive;
   color: white;
-  text-shadow: 1px 1px #3d8eba;
+  text-shadow: 1px 1px #a54242;
   text-align: center;
   padding-left: 16px;
 }
@@ -58,7 +53,7 @@
   height: 50%;
   margin: auto;
   margin-top: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   display: block;
 }
 
@@ -70,6 +65,7 @@
   margin: auto;
   display: block;
   font-size: 16px;
+  font-family: 'Archivo Narrow', sans-serif;
   text-align: center;
   line-height: 8px;
   color: black;
@@ -78,11 +74,13 @@
 .header-info h6 {
   margin-top: 14px;
   font-size: 28px;
+  font-family: 'Alfa Slab One', cursive;
 }
 
 #customize {
   text-align: center;
   font-size: 72px;
+  font-family: 'Permanent Marker', cursive;
 }
 
 #pizza-info {
@@ -98,15 +96,21 @@
 
 .col-md-6 label {
   font-size: 16px;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
 .col-md-6 h4 {
   font-size: 20px;
+  font-family: 'Alfa Slab One', cursive;
 }
 
 .col-md-6 button {
   width: 35%;
+}
+
+button {
   font-size: 16px;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
 #just-checking {
@@ -116,6 +120,7 @@
 #user-total {
   text-align: center;
   font-size: 16px;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
 #finish-button {
@@ -125,6 +130,8 @@
 #final-price {
   text-align: center;
   font-size: 16px;
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #a54242;
 }
 
 .total-top {
@@ -133,6 +140,7 @@
 
 .total-top h5 {
   font-size: 36px;
+  font-family: 'Alfa Slab One', cursive;
   text-align: center;
   margin-bottom: 2%;
 }
@@ -146,6 +154,7 @@
 
 .order-method h3 {
   text-align: center;
+  font-family: 'Alfa Slab One', cursive;
   margin-bottom: 2%;
 }
 
@@ -165,6 +174,16 @@
   margin-bottom: 5%;
 }
 
+.delivery-info h2 {
+  text-align: center;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+.delivery-info label {
+  font-size: 16px;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
 #delivery-submit{
   width: 35%;
   margin-top: 2%;
@@ -178,7 +197,18 @@
   margin-bottom: 5%;
 }
 
+.confirm-delivery h2 {
+  text-align: center;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+.confirm-delivery p {
+  font-size: 16px;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
 .pick-up-message {
+  display: none;
   text-align: center;
   margin-top: 3%;
   margin-bottom: 5%;
@@ -197,6 +227,7 @@
 }
 
 .final-message{
+  display: none;
   text-align: center;
   margin-top: 3%;
 }
@@ -205,4 +236,13 @@
   width: 25%;
   margin-top: 2%;
   margin-bottom: 5%;
+}
+
+#final-total {
+  color: #a54242;
+}
+
+body {
+  border: 30px solid white;
+  background-color: #f2e8e6;
 }
