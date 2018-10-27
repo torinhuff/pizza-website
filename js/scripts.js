@@ -85,12 +85,6 @@ function confirmFinish() {
   $(".order-method").hide();
 }
 
-// function confirmAddress() {
-//   $(".confirm-delivery").show();
-//   $(".delivery-info").hide();
-//   $(".pick-up-message").hide();
-// }
-
 function Contact(first, last, street, city, state) {
   this.firstName = first;
   this.lastName = last;
@@ -124,10 +118,6 @@ $(document).ready(function() {
     $(".street").text(newContact.street);
     $(".city").text(newContact.city);
     $(".state").text(newContact.state);
-    // };
-
-    // $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
   });
 
 });
-//
